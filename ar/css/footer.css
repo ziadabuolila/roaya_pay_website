@@ -1,0 +1,57 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--second-color);
+    color: #fff;
+    padding: 20px 50px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons .whatsapp {
+    background-color: #25D366;
+}
+
+.social-icons .facebook {
+    background-color: #1877F2;
+}
+
+.social-icons .linkedin {
+    background-color: #0A66C2;
+}
+
+.social-icons .email {
+    background-color: #FF5722;
+}
+
+.text-footer>span, footer>.text-footer>span a {
+    color: var(--main-color);
+}
+
+@media(max-width: 865px) {
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
