@@ -194,67 +194,6 @@ body {
     }
 }
 
-#welcome-card {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 495px;
-    z-index: 9998;
-}
-
-#welcome-card .card {
-    background: #fff;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-#welcome-card h3 {
-    font-size: 28px;
-    color: #53a951;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-#welcome-card p {
-    font-size: 18px;
-    color: #333;
-}
-
-.slideDown {
-    animation: slideDown 1s ease forwards;
-}
-
-@keyframes slideDown {
-    0% {
-        opacity: 0;
-        transform: translate(-50%, -100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(-50%, 80px);
-    }
-}
-
-.slideUp {
-    animation: slideUp 1s ease forwards;
-}
-
-@keyframes slideUp {
-    0% {
-        opacity: 1;
-        transform: translate(-50%, 50px);
-    }
-    100% {
-        opacity: 0;
-        transform: translate(-50%, -100%);
-    }
-}
-
 .GlowingBackdrop_glowingBackdrop__aM_VW {
     top: calc(var(--spacing, .25rem) * 105);
     left: calc(var(--spacing, .25rem) * 0);

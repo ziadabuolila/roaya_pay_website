@@ -5,17 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
         loader.style.opacity = "0";
         setTimeout(() => {
             loader.style.display = "none";
-            const welcome = document.getElementById("welcome-card");
-            welcome.style.display = "block";
-            welcome.classList.add("slideDown");
-            setTimeout(() => {
-                welcome.classList.remove("slideDown");
-                welcome.classList.add("slideUp");
-                setTimeout(() => {
-                    welcome.style.display = "none";
-                    document.getElementById("main-content").style.display = "block";
-                }, 1000);
-            }, 3000);
+            document.getElementById("main-content").style.display = "block";
         }, 500);
     }, 2000);
 });
