@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ar">
-  <head>
+
+<head>
     <!-- meta -->
     <meta charset="UTF-8" />
     <meta name="description" content="Free Web tutorials" />
@@ -16,125 +17,121 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- title -->
     <title>Roaya Pay Company For Payment Solutions And Software</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <style>
-      .chat-button {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        background-color: #1e1f1e;
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        border: none;
-        cursor: pointer;
-        z-index: 999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background-color 0.3s;
-      }
-
-      .chat-button svg {
-        font-size: 25px;
-        color: #fff;
-      }
-
-      .chat-button:hover {
-        background-color: #1e1f1e;
-      }
-
-      .chat-box {
-        position: fixed;
-        top: auto;
-        right: auto;
-        bottom: 100px;
-        left: 20px;
-        width: 320px;
-        max-width: 90%;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        display: none;
-        z-index: 998;
-        cursor: move;
-      }
-
-      .chat-box.open {
-        display: block;
-      }
-
-      .chat-header {
-        background-color: #1e1f1e;
-        padding: 15px;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        color: #000;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 76% 85%, 25% 100%, 0 81%);
-      }
-
-      .chat-header img {
-        width: 70px;
-      }
-
-      .chat-header p {
-        color: #61af44;
-      }
-
-      .chat-body {
-        padding: 15px;
-      }
-
-      .chat-body input,
-      .chat-body textarea {
-        width: 92%;
-        margin-bottom: 10px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        font-size: 14px;
-      }
-
-      .chat-body button {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        font-weight: bold;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #1e1f1e;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: none;
+            cursor: pointer;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .chat-button svg {
+            font-size: 25px;
+            color: #fff;
+        }
+        
+        .chat-button:hover {
+            background-color: #1e1f1e;
+        }
+        
+        .chat-box {
+            position: fixed;
+            top: auto;
+            right: auto;
+            bottom: 100px;
+            left: 20px;
+            width: 320px;
+            max-width: 90%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: none;
+            z-index: 998;
+            cursor: move;
+        }
+        
+        .chat-box.open {
+            display: block;
+        }
+        
+        .chat-header {
+            background-color: #1e1f1e;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 76% 85%, 25% 100%, 0 81%);
+        }
+        
+        .chat-header img {
+            width: 70px;
+        }
+        
+        .chat-header p {
+            color: #61af44;
+        }
+        
+        .chat-body {
+            padding: 15px;
+        }
+        
+        .chat-body input,
+        .chat-body textarea {
+            width: 92%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .chat-body button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
     </style>
     <!-- loader -->
     <div id="loader">
-      <img src="img/Loader_icon.png" alt="Roaya" draggable="false" />
+        <div class="loader-container">
+            <div class="neon-loader-ring"></div>
+            <img src="img/Loader_icon.png" alt="Roaya" draggable="false" />
+        </div>
     </div>
     <!-- header -->
     <button class="chat-button" id="chatToggle">
       <i class="fa-solid fa-headset"></i>
     </button>
     <div class="chat-box" id="chatBox">
-      <div class="chat-header">
-        <img src="img/Roaya.png" alt="رؤية" />
-        <p>Contact Us Now</p>
-      </div>
-      <svg
-        class="wave"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28"
-        preserveAspectRatio="none"
-        shape-rendering="auto"
-      >
+        <div class="chat-header">
+            <img src="img/Roaya.png" alt="رؤية" />
+            <p>Contact Us Now</p>
+        </div>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs>
           <path
             id="gentle-wave"
@@ -163,59 +160,42 @@
           <use xlink:href="#gentle-wave" x="48" y="7" fill="#53a951"></use>
         </g>
       </svg>
-      <div class="chat-body">
-        <form action="../php/send.php" method="POST">
-          <input type="hidden" name="where_from" value="en/index.html" />
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input
-            type="number"
-            name="phone"
-            placeholder="Phone Number"
-            required
-          />
-          <input type="email" name="email" placeholder="E-mail" />
-          <input type="text" name="subject" placeholder="Subject" required />
-          <textarea
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <div class="btns">
-            <button
-              type="submit"
-              name="submit"
-              class="submit-chat"
-              style="background-color: #1e1f1e; color: #61af44"
-            >
+        <div class="chat-body">
+            <form action="../php/send.php" method="POST">
+                <input type="hidden" name="where_from" value="en/index.html" />
+                <input type="text" name="name" placeholder="Full Name" required />
+                <input type="number" name="phone" placeholder="Phone Number" required />
+                <input type="email" name="email" placeholder="E-mail" />
+                <input type="text" name="subject" placeholder="Subject" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <div class="btns">
+                    <button type="submit" name="submit" class="submit-chat" style="background-color: #1e1f1e; color: #61af44">
               Send
             </button>
-          </div>
-        </form>
-      </div>
+                </div>
+            </form>
+        </div>
     </div>
     <header>
-      <ul>
-        <li class="active">
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="about_company.html">About Us</a>
-        </li>
-        <li>
-          <a href="our_team.html">Company Management</a>
-        </li>
-        <li>
-          <a href="developers.html">Developers</a>
-        </li>
-        <li id="dropdown">
-          <a href="#" id="services-toggle"
-            >Services <i class="fa-solid fa-chevron-down"></i
+        <ul>
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about_company.html">About Us</a>
+            </li>
+            <li>
+                <a href="our_team.html">Company Management</a>
+            </li>
+            <li>
+                <a href="developers.html">Developers</a>
+            </li>
+            <li id="dropdown">
+                <a href="#" id="services-toggle">Services <i class="fa-solid fa-chevron-down"></i
           ></a>
-          <ul class="dropdown-menu">
-            <li id="dropdown-menu-item">
-              <a class="dropdown-item" href="payments.html"
-                >Electronic Payment Services</a
+                <ul class="dropdown-menu">
+                    <li id="dropdown-menu-item">
+                        <a class="dropdown-item" href="payments.html">Electronic Payment Services</a
               >
             </li>
             <li id="dropdown-menu-item">
@@ -227,43 +207,42 @@
         </li>
         <li>
           <a href="our_partners.html">Our Partners</a>
-        </li>
-        <li>
-          <a href="faq.html">Questions</a>
-        </li>
-        <li>
-          <a href="#">Join Us</a>
-        </li>
-        <li>
-          <a href="contact_us.html">Contact Us</a>
-        </li>
-      </ul>
-      <div class="btn-open-menu">
-        <i class="fa fa-bars"></i>
-      </div>
-      <div>
-        <button id="login-btn">
+                    </li>
+                    <li>
+                        <a href="faq.html">Questions</a>
+                    </li>
+                    <li>
+                        <a href="#">Join Us</a>
+                    </li>
+                    <li>
+                        <a href="contact_us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="btn-open-menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div>
+                    <button id="login-btn">
           <a href="#"> Roaya Pay Merchant Login </a>
         </button>
-      </div>
-      <div class="logo-roaya">
-        <a href="../ar/index.html">AR</a>
-        <img src="img/Roaya.png" alt="Roaya" />
-      </div>
+                </div>
+                <div class="logo-roaya">
+                    <a href="../ar/index.html">AR</a>
+                    <img src="img/Roaya.png" alt="Roaya" />
+                </div>
     </header>
     <!-- menu -->
     <div class="menu" id="menu">
-      <div class="header-menu">
-        <a href="../ar/index.html">AR</a>
-        <div class="close-btn" id="closeMenu">
-          <i class="fa fa-close"></i>
+        <div class="header-menu">
+            <a href="../ar/index.html">AR</a>
+            <div class="close-btn" id="closeMenu">
+                <i class="fa fa-close"></i>
+            </div>
         </div>
-      </div>
-      <div class="menu-header">
-        <img src="img/Roaya.png" alt="Roaya" id="Roaya" />
-      </div>
-      <span class="innovation"
-        >Roaya Pay Company For Payment Solutions And Software</span
+        <div class="menu-header">
+            <img src="img/Roaya.png" alt="Roaya" id="Roaya" />
+        </div>
+        <span class="innovation">Roaya Pay Company For Payment Solutions And Software</span
       >
       <ul>
         <li>
@@ -295,57 +274,52 @@
             <a class="menu-link toggle-submenu">
               <i class="fa-solid fa-satellite"></i>
               <span>Services</span>
-              <i class="fa-solid fa-chevron-right menu-arrow"></i>
-            </a>
-            <ul class="submenu">
-              <li style="width: 273px">
+        <i class="fa-solid fa-chevron-right menu-arrow"></i>
+        </a>
+        <ul class="submenu">
+            <li style="width: 273px">
                 <a href="payments.html" class="submenu-link">
                   Electronic Payment Services
                 </a>
-              </li>
-              <li style="width: 273px">
+            </li>
+            <li style="width: 273px">
                 <a href="programming.html" class="submenu-link">
                   Programming Services
                 </a>
-              </li>
-            </ul>
-          </li>
+            </li>
+        </ul>
+        </li>
         </ul>
         <li>
-          <a href="our_partners.html">
-            <i class="fa-solid fa-handshake"></i> Our Partners
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
+            <a href="our_partners.html">
+                <i class="fa-solid fa-handshake"></i> Our Partners
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
         </li>
         <li>
-          <a href="faq.html">
-            <i class="fa-solid fa-question"></i> Questions
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
+            <a href="faq.html">
+                <i class="fa-solid fa-question"></i> Questions
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
         </li>
         <li>
-          <a href="terms_and_conditions.html">
-            <i class="fa-solid fa-id-card"></i> Join Us
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
+            <a href="terms_and_conditions.html">
+                <i class="fa-solid fa-id-card"></i> Join Us
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
         </li>
         <li>
-          <a href="contact_us.html">
-            <i class="fa-solid fa-phone-volume"></i> Contact Us
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
+            <a href="contact_us.html">
+                <i class="fa-solid fa-phone-volume"></i> Contact Us
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
         </li>
-      </ul>
+        </ul>
     </div>
     <div class="overlay"></div>
     <!-- slider -->
     <div class="GlowingBackdrop_glowingBackdrop__aM_VW">
-      <svg
-        viewBox="0 0 1216 726"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
+        <svg viewBox="0 0 1216 726" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <mask
           id="mask0_91_8"
           style="mask-type: alpha"
@@ -1774,33 +1748,22 @@
         </defs>
       </svg>
     </div>
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="text-container">
-        <div class="name">
-          <div class="typing-container" data-aos="fade-right">
-            <span class="company-name">Roaya Pay,</span>
-            <span> For Payment Solutions And Software </span>
-          </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="text-container">
+            <div class="name">
+                <div class="typing-container" data-aos="fade-right">
+                    <span class="company-name">Roaya Pay,</span>
+                    <span> For Payment Solutions And Software </span>
+                </div>
+            </div>
         </div>
-      </div>
-      <img class="logo" src="img/Roaya.png" alt="Roaya" data-aos="zoom-in" />
-      <a href="#download" class="down">
-        <button id="down">
+        <img class="logo" src="img/Roaya.png" alt="Roaya" data-aos="zoom-in" />
+        <a href="#download" class="down">
+            <button id="down">
           <i class="fa-solid fa-chevron-down"></i>
         </button>
-      </a>
-      <svg
-        class="waves"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28"
-        preserveAspectRatio="none"
-        shape-rendering="auto"
-      >
+        </a>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs>
           <path
             id="gentle-wave"
@@ -1832,93 +1795,81 @@
     </div>
     <!-- app -->
     <div class="app" id="download">
-      <h2>Download The App Now</h2>
-      <div class="about" data-aos="fade-up">
-        <div class="app-text">
-          <div class="company-name-app">
-            <p>Roaya Pay App</p>
-          </div>
-          <div class="app-description">
-            <p>
-              Roaya Pay Offers An Integrated Application That Allows You To Make
-              Electronic Payments With Ease, Using Your Mobile Phone. You Can
-              Top Up The Application Through A Variety Of Methods At Any Time,
-              Then Start Paying All Your Bills And Services, Including Mobile
-              Phone, Internet, Electricity, And Many More. All In Seconds And
-              With Utmost Simplicity.
-            </p>
-            <div class="qr-code">
-              <p>Scan QR Code</p>
-              <div class="scan-qr">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.roaia.merchant&pcampaignid=web_share"
-                >
-                  <img src="img/app/QR.png" alt="qr" class="qr-code-img" />
-                </a>
-              </div>
-              <span>Or Tthrough The Following Link</span>
-            </div>
-          </div>
-          <div class="app-stores">
-            <div class="google-play">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.roaia.merchant&pcampaignid=web_share"
-              >
-                <img src="img/app/andaroid.webp" alt="Roaya" />
-              </a>
-            </div>
-          </div>
-          <button class="btn-download comic-button">
+        <h2>Download The App Now</h2>
+        <div class="about" data-aos="fade-up">
+            <div class="app-text">
+                <div class="company-name-app">
+                    <p>Roaya Pay App</p>
+                </div>
+                <div class="app-description">
+                    <p>
+                        Roaya Pay Offers An Integrated Application That Allows You To Make Electronic Payments With Ease, Using Your Mobile Phone. You Can Top Up The Application Through A Variety Of Methods At Any Time, Then Start Paying All Your Bills And Services, Including
+                        Mobile Phone, Internet, Electricity, And Many More. All In Seconds And With Utmost Simplicity.
+                    </p>
+                    <div class="qr-code">
+                        <p>Scan QR Code</p>
+                        <div class="scan-qr">
+                            <a href="https://play.google.com/store/apps/details?id=com.roaia.merchant&pcampaignid=web_share">
+                                <img src="img/app/QR.png" alt="qr" class="qr-code-img" />
+                            </a>
+                        </div>
+                        <span>Or Tthrough The Following Link</span>
+                    </div>
+                </div>
+                <div class="app-stores">
+                    <div class="google-play">
+                        <a href="https://play.google.com/store/apps/details?id=com.roaia.merchant&pcampaignid=web_share">
+                            <img src="img/app/andaroid.webp" alt="Roaya" />
+                        </a>
+                    </div>
+                </div>
+                <button class="btn-download comic-button">
             <a
               href="https://play.google.com/store/apps/details?id=com.roaia.merchant&pcampaignid=web_share"
               >Download Now</a
             >
           </button>
+            </div>
+            <div class="app-image">
+                <img src="img/app/app.png" alt="Roaya" />
+            </div>
         </div>
-        <div class="app-image">
-          <img src="img/app/app.png" alt="Roaya" />
-        </div>
-      </div>
     </div>
     <!-- footer -->
     <footer>
-      <div class="social-icons">
-        <a href="https://wa.me/201100555475" class="whatsapp">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a href="https://www.facebook.com/share/19jDgFxRZo/" class="facebook">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/company/107158476/admin/dashboard/"
-          class="linkedin"
-        >
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="mailto:roya.tech2025@gmail.com" class="email">
-          <i class="fa fa-envelope"></i>
-        </a>
-      </div>
-      <div class="text-footer">
-        All Rights Reserved To
-        <span><a href="index.html">Roaya Pay</a></span> For Payment Solutions
-        And Software
-        <span> 2025 </span>
-        <sup>
+        <div class="social-icons">
+            <a href="https://wa.me/201100555475" class="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/share/19jDgFxRZo/" class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/107158476/admin/dashboard/" class="linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:roya.tech2025@gmail.com" class="email">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </div>
+        <div class="text-footer">
+            All Rights Reserved To
+            <span><a href="index.html">Roaya Pay</a></span> For Payment Solutions And Software
+            <span> 2025 </span>
+            <sup>
           <i class="fa-regular fa-copyright"></i>
         </sup>
-      </div>
+        </div>
     </footer>
     <!-- js -->
     <script>
-      document.querySelectorAll(".toggle-submenu").forEach((link) => {
-        link.addEventListener("click", function () {
-          const submenu = this.parentElement.querySelector(".submenu");
-          const arrow = this.querySelector(".menu-arrow");
-          submenu.classList.toggle("show");
-          arrow.classList.toggle("rotate");
+        document.querySelectorAll(".toggle-submenu").forEach((link) => {
+            link.addEventListener("click", function() {
+                const submenu = this.parentElement.querySelector(".submenu");
+                const arrow = this.querySelector(".menu-arrow");
+                submenu.classList.toggle("show");
+                arrow.classList.toggle("rotate");
+            });
         });
-      });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/jquery-3.7.0.min.js"></script>
@@ -1928,43 +1879,44 @@
     <script src="js/main.js"></script>
     <script src="js/login.js"></script>
     <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        setTimeout(function () {
-          AOS.init({
-            duration: 2000,
-            once: true,
-          });
-        }, 2300);
-      });
+        window.addEventListener("DOMContentLoaded", () => {
+            setTimeout(function() {
+                AOS.init({
+                    duration: 2000,
+                    once: true,
+                });
+            }, 2300);
+        });
     </script>
     <script>
-      const chatToggle = document.getElementById("chatToggle");
-      const chatBox = document.getElementById("chatBox");
-      chatToggle.addEventListener("click", () => {
-        chatBox.classList.toggle("open");
-      });
+        const chatToggle = document.getElementById("chatToggle");
+        const chatBox = document.getElementById("chatBox");
+        chatToggle.addEventListener("click", () => {
+            chatBox.classList.toggle("open");
+        });
     </script>
     <script>
-      let offsetX = 0;
-      let offsetY = 0;
-      let isDragging = false;
-      chatBox.addEventListener("mousedown", function (e) {
-        isDragging = true;
-        offsetX = e.clientX - chatBox.getBoundingClientRect().left;
-        offsetY = e.clientY - chatBox.getBoundingClientRect().top;
-        chatBox.style.transition = "none";
-      });
-      document.addEventListener("mousemove", function (e) {
-        if (isDragging) {
-          chatBox.style.left = e.clientX - offsetX + "px";
-          chatBox.style.top = e.clientY - offsetY + "px";
-          chatBox.style.right = "auto";
-          chatBox.style.bottom = "auto";
-        }
-      });
-      document.addEventListener("mouseup", function () {
-        isDragging = false;
-      });
+        let offsetX = 0;
+        let offsetY = 0;
+        let isDragging = false;
+        chatBox.addEventListener("mousedown", function(e) {
+            isDragging = true;
+            offsetX = e.clientX - chatBox.getBoundingClientRect().left;
+            offsetY = e.clientY - chatBox.getBoundingClientRect().top;
+            chatBox.style.transition = "none";
+        });
+        document.addEventListener("mousemove", function(e) {
+            if (isDragging) {
+                chatBox.style.left = e.clientX - offsetX + "px";
+                chatBox.style.top = e.clientY - offsetY + "px";
+                chatBox.style.right = "auto";
+                chatBox.style.bottom = "auto";
+            }
+        });
+        document.addEventListener("mouseup", function() {
+            isDragging = false;
+        });
     </script>
-  </body>
+</body>
+
 </html>
