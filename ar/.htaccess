@@ -1,10 +1,10 @@
 # تفعيل الـ Rewrite Engine
 RewriteEngine On
-# إزالة .html من الرابط
+
+# نخلي الصفحة الرئيسية ar/index.html تفتح مباشرة من الروت
+DirectoryIndex ar/index.html
+
+# نخفي .html من كل الروابط
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [L]
-# (اختياري) لو عايز تعمل نفس الفكرة مع .php
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteCond %{REQUEST_FILENAME}\.php -f
-#RewriteRule ^(.*)$ $1.php [L]
