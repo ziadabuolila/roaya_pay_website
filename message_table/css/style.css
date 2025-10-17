@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+body {
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #1f1f1e;
+}
+
+header img {
+    width: 90px;
+}
+
+@media(max-width: 415px) {
+    header {
+        flex-direction: column !important;
+    }
+}
+
+.table-container {
+    margin: 30px auto;
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead th {
+    background-color: #5fad4a;
+    color: #1f1f1e;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 18px 12px;
+    white-space: nowrap;
+}
+
+tbody td {
+    padding: 16px 12px;
+    font-size: 15px;
+    color: #6ab13d;
+    background: #1f1f1e;
+    border-bottom: 1px solid #eee;
+    transition: background 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background: #f5fff0;
+    color: #000;
+}
+
+tbody td:first-child {
+    font-weight: bold;
+    color: #5fad4a;
+}
+
+@media (max-width: 1024px) {
+    table {
+        min-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        min-width: 500px;
+    }
+}

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-language" content="ar" />
+    <meta name="description" content="Roaya Pay Payment Solutions and Software Company is a company specialized in the field of electronic payment and software." />
+    <meta name="keywords" content="Roaya Pay, Development, Software, Electronic Payment Solutions, Electronic Payment Gateway, Payment Gateway, Payment Solutions, Electronic Payment Solutions, Electronic Payment Solutions for Companies, Electronic Payment Solutions for Institutions, Electronic Payment Solutions for Websites, Electronic Payment Solutions for Projects, Electronic Payment Solutions for Stores, Electronic Payment Solutions for the Internet, Electronic Payment Solutions via the Internet, Electronic Payment Solutions via the Internet for Enterprises, Electronic Payment Solutions via the Internet for Companies, Electronic Payment Solutions via the Internet for Individuals, Electronic Payment Solutions via the Internet for Businesses, Electronic Payment Solutions via the Internet for Businesses, Electronic Payment Solutions via the Internet for Small Businesses, Electronic Payment Solutions via the Internet for Medium Businesses, Electronic Payment Solutions via the Internet for Large Businesses, Electronic Payment Solutions via the Internet for Startups, Electronic Payment Solutions for Small Startups, Electronic Payment Solutions for Medium Startups, Electronic Payment Solutions for Large Startups, Electronic Payment Solutions for Startups"
+    />
+    <meta name="author" content="Emad Abuolila, Roaya Pay" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Roaya Pay Company for Payment Solutions and Software" />
+    <meta property="og:description" content="Roaya Pay is a payment and software solutions company specialized in electronic payment and software." />
+    <meta property="og:image" content="img/Loader_icon.png" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:type" content="Website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Roaya Pay Company for Payment Solutions and Software" />
+    <meta name="twitter:description" content="Roaya Pay is a payment and software solutions company specialized in electronic payment and software." />
+    <meta name="twitter:image" content="img/Loader_icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Roaya.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/Roaya.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/Roaya.png">
+    <link rel="icon" href="img/Roaya.png" />
+    <!-- css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/drop_down.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- title -->
+    <title>Roaya Pay Company For Payment Solutions And Software</title>
+</head>
+
+<body>
+    <style>
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #1e1f1e;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: none;
+            cursor: pointer;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+            animation: floatUpDown 2.5s ease-in-out infinite;
+        }
+        
+        @keyframes floatUpDown {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        .chat-button svg {
+            font-size: 25px;
+            color: #fff;
+        }
+        
+        .chat-button:hover {
+            background-color: #1e1f1e;
+        }
+        
+        .chat-box {
+            position: fixed;
+            top: auto;
+            right: auto;
+            bottom: 100px;
+            left: 20px;
+            width: 320px;
+            max-width: 90%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: none;
+            z-index: 998;
+            cursor: move;
+        }
+        
+        .chat-box.open {
+            display: block;
+        }
+        
+        .chat-header {
+            background-color: #1e1f1e;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 76% 85%, 25% 100%, 0 81%);
+        }
+        
+        .chat-header img {
+            width: 70px;
+        }
+        
+        .chat-header p {
+            color: #61af44;
+        }
+        
+        .chat-body {
+            padding: 15px;
+        }
+        
+        .chat-body input,
+        .chat-body textarea {
+            width: 92%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .chat-body button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    </style>
+    <button class="chat-button" id="chatToggle">
+      <i class="fa-solid fa-headset"></i>
+    </button>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <img src="img/Roaya.png" alt="رؤية" draggable="false" />
+            <p>Contact Us Now</p>
+        </div>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          ></path>
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(83,169,81,0.7)"
+          ></use>
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgba(83,169,81,0.5)"
+          ></use>
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgba(83,169,81,0.3)"
+          ></use>
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#53a951"></use>
+        </g>
+      </svg>
+        <div class="chat-body">
+            <form action="../php/send.php" method="POST">
+                <input type="hidden" name="where_from" value="en/our_team.html" />
+                <input type="text" name="name" placeholder="Full Name" required />
+                <input type="number" name="phone" placeholder="Phone Number" required />
+                <input type="email" name="email" placeholder="E-mail" />
+                <input type="text" name="subject" placeholder="Subject" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <div class="btns">
+                    <button type="submit" name="submit" class="submit-chat" style="background-color: #1e1f1e; color: #61af44">
+              Send
+            </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- header -->
+    <header>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about_company.html">About Us</a>
+            </li>
+            <li class="active">
+                <a href="our_team.html">Company Management</a>
+            </li>
+            <li>
+                <a href="developers.html">Developers</a>
+            </li>
+            <li id="dropdown">
+                <a href="#" id="services-toggle">Services <i class="fa-solid fa-chevron-down"></i
+          ></a>
+                <ul class="dropdown-menu">
+                    <li id="dropdown-menu-item">
+                        <a class="dropdown-item" href="payments.html">Electronic Payment Services</a
+              >
+            </li>
+            <li id="dropdown-menu-item">
+              <a class="dropdown-item" href="programming.html"
+                >Programming Services</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="our_partners.html">Our Partners</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">Questions</a>
+                    </li>
+
+                    <li>
+                        <a href="contact_us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="btn-open-menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="logo-roaya">
+                    <a href="../ar/index.html">AR</a>
+                    <img src="img/Roaya.png" alt="Roaya" />
+                </div>
+    </header>
+    <!-- menu -->
+    <div class="menu" id="menu">
+        <div class="header-menu">
+            <a href="../ar/index.html">AR</a>
+            <div class="close-btn" id="closeMenu">
+                <i class="fa fa-close"></i>
+            </div>
+        </div>
+        <div class="menu-header">
+            <img src="img/Roaya.png" alt="Roaya" id="Roaya" />
+        </div>
+        <span class="innovation">Roaya Pay Company For Payment Solutions And Software</span
+      >
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i> Home
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="about_company.html">
+            <i class="fa-solid fa-info"></i> About Us
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="our_team.html" id="active">
+            <i class="fa-solid fa-people-group"></i> Company Management
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="developers.html">
+            <i class="fa-solid fa-code"></i> developers
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </li>
+        <ul class="main-menu">
+          <li class="menu-item">
+            <a class="menu-link toggle-submenu">
+              <i class="fa-solid fa-satellite"></i>
+              <span>Services</span>
+        <i class="fa-solid fa-chevron-right menu-arrow"></i>
+        </a>
+        <ul class="submenu">
+            <li style="width: 273px; padding-left: 14px">
+                <a href="payments.html" class="submenu-link">
+                  Electronic Payment Services
+                </a>
+            </li>
+            <li style="width: 273px; padding-left: 14px">
+                <a href="programming.html" class="submenu-link">
+                  Programming Services
+                </a>
+            </li>
+        </ul>
+        </li>
+        </ul>
+        <li>
+            <a href="our_partners.html">
+                <i class="fa-solid fa-handshake"></i> Our Partners
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+        </li>
+        <li>
+            <a href="faq.html">
+                <i class="fa-solid fa-question"></i> Questions
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="contact_us.html">
+                <i class="fa-solid fa-phone-volume"></i> Contact Us
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+        </li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
+    <!-- our_team -->
+    <div class="container">
+        <div class="item" data-aos="fade-down">
+            <div class="layer">
+                <img src="img/team/Emad.png" alt="Emad Abuolila" />
+                <div class="info">
+                    <p>Engineer Emad Abuolila</p>
+                    <p>Chairman Of The Board Of Directors</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://wa.me/201100730060" class="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/18n25Y83j9/" class="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/emad-abuolila-76a744252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:emad.abuolila@gmail.com" class="email">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item" data-aos="zoom-in">
+            <div class="layer">
+                <img src="img/team/Belal.jpg" alt="Belal Zidan" />
+                <div class="info">
+                    <p>Engineer Bilal Zidan</p>
+                    <p>Managing Director</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://wa.me/201005777703" class="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/1AfJ7y7Jie/?mibextid=wwXIfr" class="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="mailto:" class="email">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item" data-aos="fade-up">
+            <div class="layer">
+                <img src="img/team/khaled.jpg" alt="Khaled Nagy" />
+                <div class="info">
+                    <p>Engineer Khaled Nagy</p>
+                    <p>Director Of Development Department</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://wa.me/201221073209" class="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/1AR1bUcq7Y/" class="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/khaled-nagy-70184813b/" class="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:nagykhaled8@gmail.com" class="email">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://wa.me/201100555475" class="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/share/19jDgFxRZo/" class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/107158476/admin/dashboard/" class="linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:roya.tech2025@gmail.com" class="email">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </div>
+        <div class="text-footer">
+            All Rights Reserved To
+            <span><a href="index.html">Roaya Pay</a></span> For Payment Solutions And Software
+            <span> 2025 </span>
+            <sup>
+          <i class="fa-regular fa-copyright"></i>
+        </sup>
+        </div>
+    </footer>
+    <!-- js -->
+    <script>
+        document.querySelectorAll(".toggle-submenu").forEach((link) => {
+            link.addEventListener("click", function() {
+                const submenu = this.parentElement.querySelector(".submenu");
+                const arrow = this.querySelector(".menu-arrow");
+                submenu.classList.toggle("show");
+                arrow.classList.toggle("rotate");
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/all.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 2000,
+            once: true,
+        });
+    </script>
+    <script>
+        const chatToggle = document.getElementById("chatToggle");
+        const chatBox = document.getElementById("chatBox");
+        chatToggle.addEventListener("click", () => {
+            chatBox.classList.toggle("open");
+        });
+    </script>
+    <script>
+        let offsetX = 0;
+        let offsetY = 0;
+        let isDragging = false;
+        chatBox.addEventListener("mousedown", function(e) {
+            isDragging = true;
+            offsetX = e.clientX - chatBox.getBoundingClientRect().left;
+            offsetY = e.clientY - chatBox.getBoundingClientRect().top;
+            chatBox.style.transition = "none";
+        });
+        document.addEventListener("mousemove", function(e) {
+            if (isDragging) {
+                chatBox.style.left = e.clientX - offsetX + "px";
+                chatBox.style.top = e.clientY - offsetY + "px";
+                chatBox.style.right = "auto";
+                chatBox.style.bottom = "auto";
+            }
+        });
+        document.addEventListener("mouseup", function() {
+            isDragging = false;
+        });
+    </script>
+</body>
+
+</html>
