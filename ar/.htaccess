@@ -1,0 +1,10 @@
+# تفعيل الـ Rewrite Engine
+RewriteEngine On
+# إزالة .html من الرابط
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+# (اختياري) لو عايز تعمل نفس الفكرة مع .php
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^(.*)$ $1.php [L]
