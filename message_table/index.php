@@ -59,7 +59,9 @@
     </div>
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/all.min.js"></script>
+ <script src="https://example.com/fontawesome/v7.0.1/js/fontawesome.js" data-auto-replace-svg="nest"></script>
+  <script src="https://example.com/fontawesome/v7.0.1/js/solid.js"></script>
+  <script src="https://example.com/fontawesome/v7.0.1/js/brands.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
