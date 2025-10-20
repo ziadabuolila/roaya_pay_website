@@ -23,6 +23,7 @@ footer {
     color: #fff;
     font-size: 16px;
     transition: transform 0.2s ease;
+    text-decoration: none;
 }
 
 .social-icons a:hover {
@@ -32,6 +33,7 @@ footer {
 .social-icons .whatsapp {
     background-color: #25D366;
 }
+
 .social-icons .github {
     background-color: #000;
 }
@@ -48,7 +50,8 @@ footer {
     background-color: #FF5722;
 }
 
-.text-footer>span, footer>.text-footer>span a {
+.text-footer>span,
+footer>.text-footer>span a {
     color: var(--main-color);
 }
 

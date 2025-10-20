@@ -1355,3 +1355,8 @@ iframe {
         width: 92%;
     }
 }
+
+i.fa-solid.fa-headset {
+    color: #fff;
+    font-size: 25px;
+}
